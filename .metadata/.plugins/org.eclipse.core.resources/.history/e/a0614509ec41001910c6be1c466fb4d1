@@ -1,0 +1,60 @@
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+
+public class GUI_Controller {
+
+    @FXML
+    private ResourceBundle resources;
+
+    @FXML
+    private URL location;
+
+    @FXML
+    private TextArea SrceTxt;
+
+    @FXML
+    private TextArea AvrgTxt;
+
+    @FXML
+    private MenuBar Menu1;
+
+    @FXML
+    private MenuItem Open;
+
+    @FXML
+    private MenuItem Close;
+
+    @FXML
+    private MenuItem about;
+
+    @FXML
+    void Help(ActionEvent event) {
+
+    }
+
+    @FXML
+    void MenuClose(ActionEvent event) {
+
+    }
+
+    @FXML
+    void MenuOpen(ActionEvent event) {
+
+    }
+
+    @FXML
+    void initialize() {
+        assert SrceTxt != null : "fx:id=\"SrceTxt\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+        assert AvrgTxt != null : "fx:id=\"AvrgTxt\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+        assert Menu1 != null : "fx:id=\"Menu1\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+        assert Open != null : "fx:id=\"Open\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+        assert Close != null : "fx:id=\"Close\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+        assert about != null : "fx:id=\"about\" was not injected: check your FXML file 'GUI_HW5.fxml'.";
+
+    }
+}

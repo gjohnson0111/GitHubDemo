@@ -1,0 +1,17 @@
+.button{
+	-fx-font-size:12pt;
+	-fx-background-color: #55FF00;
+	
+	
+}
+
+#lbl{
+	
+	-fx-background-color: #005500;
+}
+
+#btn2{
+	-fx-font-size:12pt;
+	-fx-background-color: #FFFF00;
+	
+}

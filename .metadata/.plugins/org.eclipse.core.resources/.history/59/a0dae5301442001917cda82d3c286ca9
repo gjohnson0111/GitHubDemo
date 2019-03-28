@@ -1,0 +1,42 @@
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextArea;
+
+public class GUI_Controller {
+
+    @FXML
+    private TextArea SrceTxt;
+
+    @FXML
+    private TextArea AvrgTxt;
+
+    @FXML
+    private MenuBar Menu1;
+
+    @FXML
+    private MenuItem Open;
+
+    @FXML
+    private MenuItem Close;
+
+    @FXML
+    private MenuItem about;
+
+    @FXML
+    void Help(ActionEvent event) {
+
+    }
+
+    @FXML
+    void MenuClose(ActionEvent event) {
+
+    }
+
+    @FXML
+    void MenuOpen(ActionEvent event) {
+
+    }
+
+}

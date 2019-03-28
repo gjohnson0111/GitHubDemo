@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="364.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_Controller">
+   <children>
+      <Pane layoutX="-150.0" layoutY="-133.0" prefHeight="333.0" prefWidth="350.0">
+         <children>
+            <TabPane layoutX="150.0" layoutY="160.0" prefHeight="333.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="File Source">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="SrceTxt" editable="false" layoutX="14.0" layoutY="26.0" prefHeight="230.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Average">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="AvrgTxt" editable="false" layoutX="14.0" layoutY="41.0" prefHeight="230.0" prefWidth="350.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+      <MenuBar fx:id="Menu1">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#MenuOpen" text="Open" />
+                  <MenuItem fx:id="Close" mnemonicParsing="false" onAction="#MenuClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#Help" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
